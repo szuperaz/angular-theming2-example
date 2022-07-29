@@ -16,18 +16,17 @@ export class AppComponent implements OnInit {
     private channelService: ChannelService,
     private streamI18nService: StreamI18nService
   ) {
-    // const apiKey = '';
-    // const userId = '';
-    // const userToken =
-    //   '';
-    // this.chatService.init(apiKey, userId, userToken);
-    // this.streamI18nService.setTranslation();
+    const apiKey = '';
+    const userId = '';
+    const userToken = '';
+    this.chatService.init(apiKey, userId, userToken);
+    this.streamI18nService.setTranslation();
   }
 
   async ngOnInit() {
-    // this.channelService.init({
-    //   type: 'messaging',
-    //   members: { $in: ['little-wood-9'] },
-    // });
+    this.channelService.init({
+      type: 'messaging',
+      members: { $in: ['little-wood-9'] },
+    });
   }
 }
