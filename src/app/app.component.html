@@ -11,8 +11,8 @@
   </div>
   <div
     id="chat-root"
-    [class.theme-variables]="selectedLevelIndex >= 1"
-    [class.component-variables]="selectedLevelIndex >= 2"
+    [class.global-theme-variables]="selectedLevelIndex >= 1"
+    [class.component-theme-variables]="selectedLevelIndex >= 2"
     [class.custom-css-code]="selectedLevelIndex >= 3"
   >
     <stream-channel-list></stream-channel-list>

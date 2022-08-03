@@ -5,7 +5,7 @@
 @import '@radix-ui/colors/sage.css';
 @import '@radix-ui/colors/mint.css';
 
-.theme-variables {
+.global-theme-variables {
   .str-chat {
     // Theme variables
     // Neutral colors for backgrounds, borders, texts
@@ -31,7 +31,7 @@
   }
 }
 
-.component-variables {
+.component-theme-variables {
   .str-chat {
     // Component variables
     // Avatar

@@ -13,8 +13,8 @@ import {
 export class AppComponent implements OnInit {
   levels = [
     'No customization',
-    'Theme variables',
-    'Component variables',
+    'Global theme variables',
+    'Component theme variables',
     'Custom CSS code',
   ];
   selectedLevelIndex = 0;
