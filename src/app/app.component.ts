@@ -30,11 +30,10 @@ export class AppComponent implements OnInit {
   async ngOnInit() {
     const apiKey = 'dz5f4d5kzrue';
     const userId = dockerNames.getRandomName();
-    console.log(userId);
-    // await this.chatService.init(apiKey, userId, 'guest');
-    // this.channelService.init({
-    //   type: 'messaging',
-    //   id: { $eq: 'talking-about-angular' },
-    // });
+    await this.chatService.init(apiKey, userId, 'guest');
+    this.channelService.init({
+      type: 'messaging',
+      id: { $eq: 'talking-about-angular' },
+    });
   }
 }
