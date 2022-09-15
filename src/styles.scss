@@ -113,6 +113,11 @@
       grid-template-columns: auto 1fr;
       column-gap: 0.5rem;
 
+      // Flip message options
+      .str-chat__message-options {
+        flex-direction: row-reverse;
+      }
+
       // Don't hide the chat user's avatar
       .str-chat__message-sender-avatar {
         display: block;
@@ -133,6 +138,18 @@
       &.str-chat__message--system {
         grid-template-columns: 1fr;
       }
+    }
+
+    // Flip margins
+    .str-chat__li:hover {
+      .str-chat__message--me .str-chat__message-inner {
+        margin-inline-end: 0;
+      }
+    }
+
+    .str-chat__message--me .str-chat__message-inner {
+      margin-inline-start: 0;
+      margin-inline-end: calc(var(--str-chat__message-options-button-size) * 3);
     }
   }
 }
