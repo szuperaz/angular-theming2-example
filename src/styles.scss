@@ -78,10 +78,13 @@
           'message-bubble options'
           'reactions reactions';
 
-        // Make message bubble full width
+        // Make message bubble full width and add minimum height
         .str-chat__message-bubble {
           max-width: 100%;
           align-self: center;
+          min-height: var(--str-chat__message-options-button-size);
+          display: flex;
+          align-items: center;
 
           // Padding added for the border displayed for quoted messages, links, and GIFs
           .str-chat__message-attachment--card,
